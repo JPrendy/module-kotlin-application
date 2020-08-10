@@ -36,6 +36,30 @@ Go to the app's `build.gradle` and add the following
 implementation project(':module-text-example')
 ```
 
+After, you have made a release, go to [https://jitpack.io/#JPrendy/module-kotlin-application/v1.0](https://jitpack.io/#JPrendy/module-kotlin-application/v1.0) and follow the steps.
+Now we can add this module to any further projects using Jitpack.io
+
+In the new project, where you want to add this repo's module, you will need to do the following
+
+Add it in your root `build.gradle` at the end of repositories:
+
+```kotlin
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Add the dependency to the app's `build.gradle`
+
+```kotlin
+	dependencies {
+	        implementation 'com.github.JPrendy:module-kotlin-application:Tag'
+	}
+```
+
 ## How to run the project locally
 
 To run the unit tests locally.
