@@ -1,8 +1,8 @@
-# template-repository
+# Module Kotlin Application
 
 ## Description
 
-The existing repository is a template, I can generate new repositories with the same directory structure, branches, and files.
+A Kotlin Application that contains an Android module/library that is structurally the same as an Android app module, but can be reused in many other projects. 
 
 ## Contents
 
@@ -15,14 +15,39 @@ The existing repository is a template, I can generate new repositories with the 
 
 ## Setup Steps
 
+For this application, you will want to create a `New Module` and pick Android Library. This module will be used in our Main application.
+
+The main application has a `green dot` folder icon and we can run this independently on a device, while the new module we created `module-text-example` has a `three books` folder icon and we cannot run this independently on a device as it does not has any layout files. So anything we create in `module-text-example` has to imported into the main app. This makes it easier for future projects where we can import modules/libraries without needing to write them from scratch and makes the code easier to manage.
+
+**Important:** we cannot import another app in another app aka `green dot` folder icon calling a `green dot` folder icon.
+
+Go to `settings.gradle` and add the following 
+
+```kotlin
+include ':module-text-example'
+include ':app'
+rootProject.name = "module-kotlin-application"
 ```
-Code here
+
+Go to the app's `build.gradle` and add the following 
+
+
+```kotlin
+implementation project(':module-text-example')
 ```
 
 ## How to run the project locally
 
+To run the unit tests locally.
+
 ```
-Code here
+./gradlew testdebugUnitTest
+```
+
+To run the ui tests locally, but first we need an emulator to be open.
+
+```
+./gradlew connectedCheck
 ```
 
 ## Tools
@@ -55,5 +80,5 @@ How to manage releases in a repository [link](https://help.github.com/en/github/
 
 ## Helpful resources
 
-The following link provides helpful information
-- [link](https://github.com/JPrendy/template-repository).
+The following link provides helpful information on how you can create your own android library
+- [link](https://www.raywenderlich.com/52-building-an-android-library-tutorial).
