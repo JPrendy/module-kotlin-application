@@ -44,20 +44,20 @@ In the new project, where you want to add this repo's module, you will need to d
 Add it in your root `build.gradle` at the end of repositories:
 
 ```kotlin
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 Add the dependency to the app's `build.gradle`
 
 ```kotlin
-	dependencies {
-	        implementation 'com.github.JPrendy:module-kotlin-application:Tag'
-	}
+dependencies {
+        implementation 'com.github.JPrendy:module-kotlin-application:Tag'
+}
 ```
 
 ## How to run the project locally
