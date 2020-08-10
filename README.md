@@ -82,3 +82,6 @@ How to manage releases in a repository [link](https://help.github.com/en/github/
 
 The following link provides helpful information on how you can create your own android library
 - [link](https://www.raywenderlich.com/52-building-an-android-library-tutorial).
+
+The following link provides helpful information on how you can publish your android library to Jitpack.io
+- [link](https://medium.com/@anujguptawork/how-to-create-your-own-android-library-and-publish-it-750e0f7481bf).
