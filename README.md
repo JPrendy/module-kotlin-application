@@ -17,9 +17,9 @@ A Kotlin Application that contains an Android module/library that is structurall
 
 For this application, you will want to create a `New Module` and pick Android Library. This module will be used in our Main application.
 
-The main application has a `green dot` folder icon and we can run this independently on a device, while the new module we created `module-text-example` has a `three books` folder icon and we cannot run this independently on a device as it does not has any layout files. So anything we create in `module-text-example` has to imported into the main app. This makes it easier for future projects where we can import modules/libraries without needing to write them from scratch and makes the code easier to manage.
+The main application is a `Phone and Tablet module` and a `green dot` folder icon and we can run this independently on a device, while the new module we created `module-text-example` is an `Android library` has a `three books` folder icon and we cannot run this independently on a device as it does not has any layout files. So anything we create in `module-text-example` has to imported into the main app. This makes it easier for future projects where we can import modules/libraries without needing to write them from scratch and makes the code easier to manage.
 
-**Important:** we cannot import another app in another app aka `green dot` folder icon calling a `green dot` folder icon.
+**Important:** we cannot import another app in another app aka `Phone and Tablet module` `green dot` folder icon calling a `Phone and Tablet module` `green dot` folder icon.
 
 Go to `settings.gradle` and add the following 
 
