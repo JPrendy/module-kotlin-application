@@ -29,7 +29,7 @@ class ExampleInstrumentedTest {
         assertEquals("com.example.module_text_example.test", appContext.packageName)
     }
 
-    // We can't use an Activity in a `Android library` module since it is not an app and we can't launch non app module like
+    // We can't use an Activity in a `Android library` module since it is not an app and we can't launch non app module like `module-text-example` module.
 //    @get:Rule
 //    val activityRule = ActivityTestRule(MainActivity::class.java, true, false)
 //
