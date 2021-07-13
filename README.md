@@ -60,6 +60,8 @@ dependencies {
 }
 ```
 
+Note, we cannot run ui tests in the `module-text-example` module, only in the app itself because we have no activity to reference in the module.
+
 ## How to run the project locally
 
 To run the unit tests locally.
